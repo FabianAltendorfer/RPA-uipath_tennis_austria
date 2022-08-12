@@ -1,0 +1,299 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1206,3456" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="718,3391" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="oetv_rangliste_raw">
+        <Variable.Default>
+          <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="New System.Data.DataTable" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Open Browser OETV.AT" sap:VirtualizedContainerService.HintSize="676,3299" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="43b30e98-13c1-4e45-8e9a-3d4f57fac108" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="642,3082" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="x:String" Name="amount_of_players_raw" />
+              <Variable x:TypeArguments="x:String" Name="output_table" />
+              <Variable x:TypeArguments="x:Int32" Name="page_counter">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:Int32" Value="1" />
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="sd:DataTable" Name="oetv_rangliste_filtered" />
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="amount_of_players_number_regex" />
+              <Variable x:TypeArguments="x:String" Name="amount_of_pages" />
+              <Variable x:TypeArguments="x:Int32" Name="amount_of_pages_number" />
+              <Variable x:TypeArguments="x:Int32" Name="amount_of_players_number" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="get amount of players" sap:VirtualizedContainerService.HintSize="600,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="43b30e98-13c1-4e45-8e9a-3d4f57fac108" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.oetv.at/rangliste/itn/app/nuChampionships.html#result" DesignTimeRectangle="390, 551, 1140, 24" ElementType="Text" FriendlyName="'ITN Austria'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='margin-top' /&gt;" Guid="b0a374c0-4c9b-404c-939a-2d5bd041dba2" InformativeScreenshot="47b781a12c53fb8a68a682a544d6b7d3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ITN Austria Spielstärke - ÖTV - Österreichischer Tennisverband' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[amount_of_players_raw]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:Matches BuilderPattern="(\d+)" sap:VirtualizedContainerService.HintSize="600,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[amount_of_players_raw]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d+)" RegexOption="IgnoreCase, Compiled" Result="[amount_of_players_number_regex]" />
+            <Assign DisplayName="Assign - Amount of Players Number" sap:VirtualizedContainerService.HintSize="600,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[amount_of_players_number]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(amount_of_players_number_regex(0).value)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="600,62" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[amount_of_players_number.ToString]" />
+            <Assign sap:VirtualizedContainerService.HintSize="600,61" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[amount_of_pages_number]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[amount_of_players_number \ 50]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="600,62" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[amount_of_pages_number.ToString]" />
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="600,1827" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch.Try>
+                <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="562,1595" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                  <ui:InterruptibleWhile.Body>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1428" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ITN' ReferenceIdx='0' Name='ITN'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Name (Nation)' ReferenceIdx='1' Name='Name (Nation)'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Lizenz' ReferenceIdx='2' Name='Lizenz'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Jahrgang' ReferenceIdx='3' Name='Jahrgang'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Verein' ReferenceIdx='4' Name='Verein'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Region' ReferenceIdx='5' Name='Region'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='ITN' attr='text' /&gt;&lt;column name='Name (Nation)' attr='text' /&gt;&lt;column name='Lizenz' attr='text' /&gt;&lt;column name='Jahrgang' attr='text' /&gt;&lt;column name='Verein' attr='text' /&gt;&lt;column name='Region' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NExtractData_2" MaximumResults="0" Version="V1">
+                        <uix:NExtractData.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="390, 435, 1140, 1787" FriendlyName="'ITN Name'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="52bfa79e-894e-4b9a-96d5-104ecd3727cb" InformativeScreenshot="6f41aa496edffe1d5acb3281d37ea753.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ITN Austria Spielstärke - ÖTV - Österreichischer Tennisverband' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                        </uix:NExtractData.Target>
+                      </uix:NExtractData>
+                      <ui:MergeDataTable Destination="[oetv_rangliste_raw]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[ExtractDataTable]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[page_counter]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[page_counter + 1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[page_counter &lt;= 100]" sap:VirtualizedContainerService.HintSize="484,438" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,249" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ClickType="Single" DisplayName="Click next page" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43b30e98-13c1-4e45-8e9a-3d4f57fac108" Version="V1">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.oetv.at/rangliste/itn/app/nuChampionships.html#result" DesignTimeRectangle="422, 349, 39, 42" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;webctrl aaname=' 2 ' parentid='content' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='A' type='' class='' check:innerText='page_counter' /&gt;" Guid="ca916cd4-d027-4607-854c-880e734bf02c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAqCAYAAAAwPULrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEzSURBVFhH7Zgha8NAFMfzMQazdTVjKrJfIK6qbjJfYC5mdjBoP8BkxGCmslNTGcxUdWKEihUqKgKtWKHiv3/aSwabupc7uLH3g5dwl7vHj0veE4kQMIHLRX1e+zicD1CWZVDRyh0jAGqpBpWzQeWkqJwUlZOiclL+kdz6BUhHwFmd4xJIroHXrXlojzu53TPQGwL3c6CiULUB8oy5KPtu1lji9uQO5t5CySvmuluYsR3+v7mMuW54mgI8y/HELphrKvvu/Mo9pEA8Bj7N2BJ/cm85qzYBir2ZsMeP3PLxJDZjxXbAvdzyia+SYtOVmZDjVq5iE47ZfPPuYjXu5HZsFzH3TZom/CMEuJMrbr/3/gpW7YdZZ4GfgnCEyklROSkqJ0XlpKiclL8nF+YP64AJWA74AhSLV0qKEXTIAAAAAElFTkSuQmCC" InformativeScreenshot="623f2b3e1c5a3605b6463446083d8a7b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ITN Austria Spielstärke - ÖTV - Österreichischer Tennisverband' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="390, 315, 1140, 24" ElementType="Text" FriendlyName="'ITN Austria'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='margin-top' aaname='Gefundene Spieler*' check:innerText='Gefundene Spieler*' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="242,84" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <If Condition="[page_counter &gt; 100 AND page_counter &lt; (amount_of_pages_number + 1)]" sap:VirtualizedContainerService.HintSize="484,387" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Button" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f1997bfe-4ede-40e0-8280-d7e9392d459b" InformativeScreenshot="de1a1e05e983d8f3e5c01417480002c4" Selector="&lt;webctrl parentid='content' tag='A' idx='9' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ui:InterruptibleWhile.Body>
+                  <ui:InterruptibleWhile.Condition>
+                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="page_counter &lt;= (amount_of_pages_number +2)" />
+                  </ui:InterruptibleWhile.Condition>
+                </ui:InterruptibleWhile>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="566,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Bot broke at page &quot; + page_counter.ToString]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="600,62" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[amount_of_players_raw]" />
+            <ui:FilterDataTable DataTable="[oetv_rangliste_raw]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="600,162" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[oetv_rangliste_filtered]" SelectColumnsMode="Keep">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["ITN"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:WriteRange AddHeaders="True" DataTable="[oetv_rangliste_filtered]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="600,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="[&quot;oetv_rangliste_&quot; + Now.ToString(&quot;dd.MM.yyyy&quot;) + &quot;.xlsx&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVDhP7dDLSkJRFIfxA4FmWNCgQZHQIMsLQRQpKF0mDmoQQeS0QIomQRZdNCyUoCi6PEJvWt9Hy7dww4+zz/9s1llrJ6P1v36TcgozyCEdWRYrIRvZNFZRxLiZ4QKusYVttLCDAW5xF3uzR7Rxjy7mLfCKXRzjClW8YR8P8OABPHeECvbg+YEFPpDHMy7gXy8xhnOcxt4u7a6DPubwZYFPLGFY4AbtGK+Jw9ibb+IHjpLBtx9eYLsn8C81OMIG1rEGx3rHIs7QgGP3LeDNO6fzemE+63iKdy+sF5lPO/GMo87anUXScIwyJiObQAHLyEQ2hRLsJGU2WknyByyKrvJdBprFAAAAAElFTkSuQmCC" InformativeScreenshot="3f0e90f9a8ee59ecdb3f859e917def73.png" Selector="&lt;html app='msedge.exe' title='ITN Austria Spielstärke - ÖTV - Österreichischer Tennisverband' /&gt;" Url="https://www.oetv.at/rangliste/itn/app/nuChampionships.html#result" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
